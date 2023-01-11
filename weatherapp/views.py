@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 import requests 
 import datetime 
 # Create your views here.
@@ -20,5 +20,5 @@ def index (request):
     day =datetime.date.today()
 
     return render(request,'weatherapp/index.html',{'description' :description,'icon':icon,'temp':temp,'day':day,'city':city})
-
-
+'''def local (request):
+    return HttpResponse("Hello Ritesh")'''
