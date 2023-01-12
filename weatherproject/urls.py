@@ -19,4 +19,5 @@ from django.urls import path,include
 urlpatterns = [
     path('weather', include('weatherapp.urls')),
     path('poll', include('pollsapp.urls')),
+    
 ]
