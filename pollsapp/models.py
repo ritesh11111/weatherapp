@@ -16,3 +16,11 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
     def __str__(self):
         return self.choice_text
+class next(models.Model):
+    nxt_question=models.CharField(max_length=1000)
+    def _str_(self):
+        return self.nxt_question
+class conclusion(models.Model):
+    concls=models.CharField(max_length=500)
+    def _str_(self):
+        return self.concls
